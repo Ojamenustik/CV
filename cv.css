@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+html{
+   background-color: #79BBCD;
+}
+
+body{
+   background-color: #D4DEFA;
+   color: black;
+   padding: 0;
+   margin: 5% 10%;
+}
+
+#top{
+   background-color: #81D462;
+   color: #3A4E59;
+}
+
+
+h1{
+   padding-top: 20px;
+   margin-left: 20px;
+   font-size: 70px;
+}
+
+h3{
+   padding: 0;
+   padding-bottom: 10px;
+   margin: 0;
+   margin-left: 20px;
+}
+
+nav{
+   background-color: #81D462;
+   margin-top: 40px;
+}
+
+
+#spis{
+   list-style: none;
+   color: #81D462;
+   min-width: 100%;
+   margin: 0 auto;
+   display: inline-flex;
+   flex-wrap: nowrap;
+   align-items: stretch;
+}
+
+#spis li{
+   padding: 5px;
+   padding-right: 1%;
+   padding-left: 2%;;
+   background-color: #5A8078;
+   width:20%;
+   border-right: 1px solid #81D462;
+}
+
+.tytul{
+   display: block;
+   width: 200px;
+   background-color: #5A8078;
+   padding: 10px;
+   margin-left: 2%;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   transform: skewX(-20deg);
+}
+
+
+#omnie{
+   max-width: 100%;
+   min-height: 200px;
+   max-height: 500px;
+   display: inline-flex;
+   flex-wrap: nowrap;
+}
+
+
+#dane{
+   width: 30%;
+   margin-left: 7%;
+   float:left;
+}
+
+#dane:first-child{
+   padding-top: 30px;
+}
+
+#dane p{
+   max-width: 110%;
+   margin-bottom: 10px;
+}
+
+#dane span{
+   color: #3A4E59;
+   
+}
+
+#zdjecie{
+   min-width: 20%;
+   float: left;
+   padding: 0 3% 0 0;
+}
+
+img{
+   border: 2px solid #81D462;
+   margin-top: -20px;
+   padding: 5px;
+   width: 180px;
+   height: 180px;
+   border-radius: 180px;
+}
+
+#opis {
+   width: 50%;
+   float: left;
+   margin-left: 1%;
+   margin-right: 7%;
+}
+
+.skills{
+   max-width: 100%;
+   margin-left: 3%;
+   margin-right: 3%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.skill{
+   background-color: #81D462;
+   color:darkmagenta;
+   border-radius: 15px;
+   padding: 5px 20px;
+   margin: 2px 8px;
+   flex: 2;
+   min-width: 15%;
+   max-width: 25%;
+}
+
+#exp{
+   margin-left: 3%;
+   margin-right: 3%;
+}
+
+#exp ul{
+   list-style: none;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#exp ul li{
+   background-color: #81D48D;
+   color:darkmagenta;
+   border-radius: 5px;
+   padding: 5px 15px;
+   margin: 2px 8px;
+   flex: 2;
+   min-width: 30%;
+   max-width: 65%;
+}
+
+#education{
+   margin-left: 3%;
+   margin-right: 3%;
+   border-left: 2px dotted pink;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+
+#education ul{
+   list-style: none;
+   padding-left: 20px;
+}
+
+#education ul li{
+   padding-bottom: 10px;
+}
+
+#interest{
+   margin-left: 3%;
+   margin-right: 3%;
+}
+
+#interest ul{
+   list-style: none;
+   display: flex;
+   padding-top: 10px;
+   padding-bottom: 30px;
+}
+
+footer{
+   background-color: #2E363B;
+   color: #F2786B;
+   padding: 40px;
+   border-top: 2px dotted pink;;
+}
+
+#dark{
+   background-color: #465159;
+   color: aqua;
+   border-top: 2px solid blueviolet;
+}
+
+.g{
+   background-color: #79BBCD;
+}
+
+#projects{
+   margin-left: 3%;
+   margin-right: 3%;
+   border-left: 2px dotted pink;
+   padding-bottom: 10px;
+}
+
+#projects ul{
+   list-style: none;
+   padding-left: 20px;
+}
+
+#projects ul li{
+   padding-bottom: 5px;
+}
+
+
+
+@media (min-width:520px) and (max-width:1000px){
+   
+   #omnie{
+   max-width: 100%;
+   min-height: 200px;
+   max-height: 600px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#dane{
+   width: 50%;
+   order: 2;
+   margin-left: 20%;
+}
+
+#dane:first-child{
+   padding-top: 40px;
+}
+
+
+
+#zdjecie{
+   width: 10%;
+   order: 1;
+}
+
+img{
+   
+   margin-left: 25%;
+   margin-top: 7%;
+   margin-bottom: 5%;
+   border: 2px solid #81D462;
+   padding: 5px;
+   width: 180px;
+   height: 180px;
+   border-radius: 180px;
+}
+
+#opis {
+   width: 100%;
+   margin-left: 5%;
+   margin-right: 7%;
+   order: 3;
+}
+   
+.skill{
+
+   padding: 3px 10px;
+   margin: 2px 5px;
+   min-width: 20%;
+   max-width: 25%;
+}
+
+}
+
+@media (max-width: 649px){
+   body{
+      margin: 0;
+   }
+   
+   
+}
+
+@media (max-width: 520px){
+      #omnie{
+   display: flex;
+   flex-wrap: wrap;
+   max-height: 100%;
+}
+
+ #dane{
+   width: 50%;
+   order: 2;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 25%;
+   margin-right: 25%;
+   text-align: center;
+}
+
+#dane:first-child{
+   padding-top: 0;
+}
+
+#zdjecie{
+   width: 40%;
+   order: 1;
+   margin-top: 30px;
+   margin-left: 30%;
+   margin-right: 30%;
+}
+
+img{
+   
+   border: 2px solid #81D462;
+   padding: 5px;
+   width: 180px;
+   height: 180px;
+   border-radius: 180px;
+}
+
+#opis {
+   width: 90%;
+   order: 3;
+   margin-bottom: 20px;
+   margin-left: 5%;
+   margin-right: 5%;
+   text-align: center;
+}
+   
+.skill{
+
+   padding: 3px 10px;
+   margin-bottom: 10px;
+   min-width: 20%;
+   max-width: 25%;
+}
+
+  
+}
+
+@media (max-width: 480px){
+   
+   nav{
+      display: none;
+   }
+   
+   #top{
+      text-align: center;
+   }
+   
+   .tytul{
+   width: 100%;
+   background-color: #5A8078;
+   padding: 10px;
+   margin-bottom: 10px;
+   margin-left: 0;
+   transform: skewX(0deg);
+   text-align: center;
+   margin-top: 10px;
+}
+   
+   .skill{
+
+   padding: 3px 10px;
+   margin: 2px 2px;
+   min-width: 40%;
+   max-width: 50%;
+}
+   
+   #interest ul{
+      flex-wrap: wrap;
+   }
+   
+   #exp ul li{
+      min-width: 100%;
+      margin-left: 0;
+   }
+   
+   h3{
+   padding: 0;
+   padding-bottom: 10px;
+   margin: 0;
+   margin-left: 20px;
+}
+}
+@media (max-width: 290px){
+   #zdjecie{
+   width: 70%;
+   order: 1;
+   margin-top: 30px;
+   margin-right: 5%;
+   margin-left: 15%;
+}
+}
